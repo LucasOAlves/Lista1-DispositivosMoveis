@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Page Two</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item [color]="changeColor(rede)" *ngFor="let rede of redes" (click)="showAlert(rede)">
+      {{rede}}
+    </ion-item>
+  </ion-list>
+</ion-content>

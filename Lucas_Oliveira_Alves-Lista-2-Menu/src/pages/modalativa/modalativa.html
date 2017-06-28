@@ -1,0 +1,29 @@
+<!--
+  Generated template for the Modalativa page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{wifiName}}</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-olny (click)="closemodal()">
+        <ion-icon name="close"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-list>
+    <ion-list-header color='primary'>Status</ion-list-header>
+    <ion-item>Conectado</ion-item>
+    <ion-list-header color='primary'>Qualidade do Sinal</ion-list-header>
+    <ion-item>{{qualidade}}%</ion-item>
+    <ion-list-header color='primary'>Potência do Sinal</ion-list-header>
+    <ion-item>{{potencia}}%</ion-item>
+  </ion-list>
+
+</ion-content>
